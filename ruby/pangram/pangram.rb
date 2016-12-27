@@ -11,10 +11,23 @@ module BookKeeping
 end
 
 class Pangram
-  def self.pangram?(_text)
+  A_POINT = "a".codepoints[0]
+  Z_POINT = "z".codepoints[0]
 
-  end
+  def self.pangram?(text)
+    return false if text == ""
 
-  def self.alphabet
+    last_letter =
+      text
+        .downcase
+        .gsub(/[^a-z]/, "") # Remove all non-letter characters.
+        .codepoints
+        .sort
+        .reduce(A_POINT) do |last_char, char|
+          break false unless last_char == char - 1 || last_char == char
+          char
+        end
+
+    last_letter && last_letter == Z_POINT
   end
 end
