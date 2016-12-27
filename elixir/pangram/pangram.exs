@@ -17,7 +17,7 @@ defmodule Pangram do
   def pangram?(sentence) do
     sentence
     |> String.downcase
-    # Remote all non-letter characters.
+    # Remove all non-letter characters.
     |> String.replace(~r/[^a-z]/, "")
     |> String.to_charlist
     |> Enum.sort
