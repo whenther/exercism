@@ -6,11 +6,11 @@ class Raindrops
   def self.convert(number)
     answer = ""
 
-    answer += "Pling" if factor_of(number, 3)
-    answer += "Plang" if factor_of(number, 5)
-    answer += "Plong" if factor_of(number, 7)
+    answer << "Pling" if factor_of(number, 3)
+    answer << "Plang" if factor_of(number, 5)
+    answer << "Plong" if factor_of(number, 7)
 
-    answer == "" ? number.to_s : answer
+    answer.empty? ? number.to_s : answer
   end
 
   def self.factor_of(number, factor)
