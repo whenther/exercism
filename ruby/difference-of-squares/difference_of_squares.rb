@@ -20,7 +20,12 @@ end
 
 class Squares
   def initialize(n)
-    @number = n
+    @numbers =
+      if n.zero?
+        [0]
+      else
+        1..n
+      end
   end
 
   def difference
@@ -28,17 +33,13 @@ class Squares
   end
 
   def sum_of_squares
-    return 0 if @number.zero?
-
-    (1..@number).reduce do |sum, n|
+    @numbers.reduce do |sum, n|
       sum + n**2
     end
   end
 
   def square_of_sum
-    return 0 if @number.zero?
-
-    sum = (1..@number).reduce(:+)
+    sum = @numbers.reduce(:+)
     sum**2
   end
 end
