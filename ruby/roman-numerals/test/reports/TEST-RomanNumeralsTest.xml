@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time='0.000239' skipped='0' failures='0' errors='0' name="RomanNumeralsTest" assertions='19' tests='19'>
+  <testcase time='0.000032' file="roman_numerals_test.rb" name="test_4" assertions='1'>
+  </testcase>
+  <testcase time='0.000027' file="roman_numerals_test.rb" name="test_402" assertions='1'>
+  </testcase>
+  <testcase time='0.000012' file="roman_numerals_test.rb" name="test_575" assertions='1'>
+  </testcase>
+  <testcase time='0.000011' file="roman_numerals_test.rb" name="test_163" assertions='1'>
+  </testcase>
+  <testcase time='0.000009' file="roman_numerals_test.rb" name="test_3" assertions='1'>
+  </testcase>
+  <testcase time='0.000010' file="roman_numerals_test.rb" name="test_93" assertions='1'>
+  </testcase>
+  <testcase time='0.000008' file="roman_numerals_test.rb" name="test_2" assertions='1'>
+  </testcase>
+  <testcase time='0.000013' file="roman_numerals_test.rb" name="test_1024" assertions='1'>
+  </testcase>
+  <testcase time='0.000011' file="roman_numerals_test.rb" name="test_911" assertions='1'>
+  </testcase>
+  <testcase time='0.000011' file="roman_numerals_test.rb" name="test_141" assertions='1'>
+  </testcase>
+  <testcase time='0.000008' file="roman_numerals_test.rb" name="test_1" assertions='1'>
+  </testcase>
+  <testcase time='0.000009' file="roman_numerals_test.rb" name="test_48" assertions='1'>
+  </testcase>
+  <testcase time='0.000009' file="roman_numerals_test.rb" name="test_59" assertions='1'>
+  </testcase>
+  <testcase time='0.000008' file="roman_numerals_test.rb" name="test_5" assertions='1'>
+  </testcase>
+  <testcase time='0.000008' file="roman_numerals_test.rb" name="test_6" assertions='1'>
+  </testcase>
+  <testcase time='0.000005' file="roman_numerals_test.rb" name="test_bookkeeping" assertions='1'>
+  </testcase>
+  <testcase time='0.000010' file="roman_numerals_test.rb" name="test_27" assertions='1'>
+  </testcase>
+  <testcase time='0.000031' file="roman_numerals_test.rb" name="test_3000" assertions='1'>
+  </testcase>
+  <testcase time='0.000009' file="roman_numerals_test.rb" name="test_9" assertions='1'>
+  </testcase>
+</testsuite>

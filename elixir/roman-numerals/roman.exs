@@ -49,7 +49,7 @@ defmodule Roman do
       n <= 3 -> String.duplicate(one, n)
       n == 4 -> one <> five
       n == 5 -> five
-      n <= 8 -> five <> (String.duplicate(one, n - 5))
+      n <= 8 -> five <> String.duplicate(one, n - 5)
       n == 9 -> one <> ten
     end
   end
