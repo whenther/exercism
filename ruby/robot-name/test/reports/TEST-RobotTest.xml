@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time='0.000136' skipped='0' failures='0' errors='0' name="RobotTest" assertions='10' tests='6'>
+  <testcase time='0.000026' file="robot_name_test.rb" name="test_name_sticks" assertions='1'>
+  </testcase>
+  <testcase time='0.000016' file="robot_name_test.rb" name="test_different_robots_have_different_names" assertions='1'>
+  </testcase>
+  <testcase time='0.000049' file="robot_name_test.rb" name="test_reset_name" assertions='4'>
+  </testcase>
+  <testcase time='0.000025' file="robot_name_test.rb" name="test_different_name_when_chosen_name_is_taken" assertions='1'>
+  </testcase>
+  <testcase time='0.000014' file="robot_name_test.rb" name="test_has_name" assertions='2'>
+  </testcase>
+  <testcase time='0.000006' file="robot_name_test.rb" name="test_version" assertions='1'>
+  </testcase>
+</testsuite>
