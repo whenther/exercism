@@ -27,7 +27,7 @@ class Prime
     return true if number == 2
 
     is_prime = true
-    top_factor = number - 1
+    top_factor = Math.sqrt(number).floor
 
     # Check if any numbers below the number are a factor.
     (2..top_factor).each do |factor|

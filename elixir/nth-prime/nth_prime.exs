@@ -12,20 +12,27 @@ defmodule Prime do
   defp nth(count, number) do
     number = number + 1
 
-    if is_prime?(number) do
+    if prime?(number) do
       nth(count - 1, number)
     else
       nth(count, number)
     end
   end
 
-  defp is_prime?(number), do: is_prime?(number, number - 1)
-  defp is_prime?(number, 1), do: true
-  defp is_prime?(number, candidate) do
+  defp prime?(number), do: prime?(number, top_factor_candiate(number))
+  defp prime?(number, 1), do: true
+  defp prime?(number, candidate) do
     if rem(number, candidate) === 0 do
       false
     else
-      is_prime?(number, candidate - 1)
+      prime?(number, candidate - 1)
     end
+  end
+
+  defp top_factor_candiate(number) do
+    number
+    |> :math.sqrt
+    |> Float.floor
+    |> round
   end
 end
