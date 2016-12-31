@@ -32,4 +32,9 @@ defmodule NthPrimeTest do
   test "weird case" do
     catch_error Prime.nth(0)
   end
+  
+  @tag :pending
+  test "big prime" do
+    assert Prime.nth(10001) == 104743
+  end
 end

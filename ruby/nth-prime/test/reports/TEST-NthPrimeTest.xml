@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time='0.000118' skipped='1' failures='0' errors='0' name="NthPrimeTest" assertions='5' tests='6'>
+  <testcase time='0.000024' file="nth_prime_test.rb" name="test_there_is_no_zeroth_prime" assertions='1'>
+  </testcase>
+  <testcase time='0.000009' file="nth_prime_test.rb" name="test_first_prime" assertions='1'>
+  </testcase>
+  <testcase time='0.000044' file="nth_prime_test.rb" name="test_sixth_prime" assertions='1'>
+  </testcase>
+  <testcase time='0.000005' file="nth_prime_test.rb" name="test_second_prime" assertions='1'>
+  </testcase>
+  <testcase time='0.000004' file="nth_prime_test.rb" name="test_bookkeeping" assertions='1'>
+  </testcase>
+  <testcase time='0.000032' file="nth_prime_test.rb" name="test_big_prime" assertions='0'>
+    <skipped type='Minitest::Skip' message="Skipped, no message given">nth_prime_test.rb:23:in `test_big_prime&#39;
+    </skipped>
+  </testcase>
+</testsuite>

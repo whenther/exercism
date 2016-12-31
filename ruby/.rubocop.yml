@@ -3,3 +3,6 @@ Style/Documentation:
 
 Style/StringLiterals:
   Enabled: false
+
+Style/RaiseArgs:
+  EnforcedStyle: compact
