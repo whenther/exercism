@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time='0.000040' skipped='0' failures='0' errors='0' name="YearTest" assertions='8' tests='8'>
+  <testcase time='0.000012' file="leap_test.rb" name="test_standard_and_odd_year" assertions='1'>
+  </testcase>
+  <testcase time='0.000005' file="leap_test.rb" name="test_leap_y2k" assertions='1'>
+  </testcase>
+  <testcase time='0.000003' file="leap_test.rb" name="test_leap_year" assertions='1'>
+  </testcase>
+  <testcase time='0.000004' file="leap_test.rb" name="test_standard_nineteenth_century" assertions='1'>
+  </testcase>
+  <testcase time='0.000003' file="leap_test.rb" name="test_leap_twenty_fourth_century" assertions='1'>
+  </testcase>
+  <testcase time='0.000003' file="leap_test.rb" name="test_standard_eighteenth_century" assertions='1'>
+  </testcase>
+  <testcase time='0.000003' file="leap_test.rb" name="test_standard_even_year" assertions='1'>
+  </testcase>
+  <testcase time='0.000007' file="leap_test.rb" name="test_bookkeeping" assertions='1'>
+  </testcase>
+</testsuite>
