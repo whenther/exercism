@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time='0.000088' skipped='0' failures='0' errors='0' name="GrainsTest" assertions='8' tests='8'>
+  <testcase time='0.000020' file="grains_test.rb" name="test_square_3" assertions='1'>
+  </testcase>
+  <testcase time='0.000007' file="grains_test.rb" name="test_square_4" assertions='1'>
+  </testcase>
+  <testcase time='0.000005' file="grains_test.rb" name="test_square_2" assertions='1'>
+  </testcase>
+  <testcase time='0.000016' file="grains_test.rb" name="test_square_64" assertions='1'>
+  </testcase>
+  <testcase time='0.000005' file="grains_test.rb" name="test_square_1" assertions='1'>
+  </testcase>
+  <testcase time='0.000005' file="grains_test.rb" name="test_square_32" assertions='1'>
+  </testcase>
+  <testcase time='0.000004' file="grains_test.rb" name="test_square_16" assertions='1'>
+  </testcase>
+  <testcase time='0.000026' file="grains_test.rb" name="test_total_grains" assertions='1'>
+  </testcase>
+</testsuite>
