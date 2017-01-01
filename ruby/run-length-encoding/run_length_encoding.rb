@@ -22,10 +22,28 @@ class RunLengthEncoding
   end
 
   def self.decode(text)
+    decoded =
+      text.scan(/(\d*)([^\d])/).map do |data|
+        DecodedChar.new(data).print
+      end
+
+    decoded.join("")
   end
 
   def self.print_encoded_chars(encoded)
     encoded.map(&:print).join("")
+  end
+end
+
+class DecodedChar
+  def initialize(data)
+    count_string = data[0]
+    @count = count_string.empty? ? 1 : count_string.to_i
+    @char = data[1]
+  end
+
+  def print
+    @char * @count
   end
 end
 
