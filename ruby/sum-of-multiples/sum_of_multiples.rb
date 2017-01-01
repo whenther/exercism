@@ -10,9 +10,7 @@ class SumOfMultiples
   def to(last)
     return 0 if last == 1
 
-    last -= 1
-
-    (1..last).reduce(0) do |acc, n|
+    (1...last).reduce(0) do |acc, n|
       if multiple?(n)
         acc + n
       else
@@ -24,7 +22,7 @@ class SumOfMultiples
   private
 
   def multiple?(n)
-    @multiples.find do |m|
+    @multiples.any? do |m|
       (n % m).zero?
     end
   end
