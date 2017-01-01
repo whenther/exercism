@@ -34,7 +34,7 @@ class School
   end
 
   def add(name, grade)
-    @grades[grade] = Grade.new(grade) unless @grades[grade]
+    @grades[grade] ||= Grade.new(grade)
     @grades[grade].add(name)
   end
 
