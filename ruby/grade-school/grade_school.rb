@@ -25,20 +25,48 @@
 #   tests
 
 module BookKeeping
-  VERSION = 1
+  VERSION = 3
 end
 
 class School
   def initialize
-    @students = {}
+    @grades = {}
   end
 
   def add(name, grade)
+    @grades[grade] = Grade.new(grade) unless @grades[grade]
+    @grades[grade].add(name)
   end
 
   def students(grade)
+    @grades[grade] ? @grades[grade].students : []
   end
 
   def students_by_grade
+    @grades.keys.sort.map do |i|
+      @grades[i].data
+    end
+  end
+end
+
+class Grade
+  def initialize(grade)
+    @grade = grade
+    @students = []
+  end
+
+  def add(name)
+    @students.push(name) unless @students.include?(name)
+  end
+
+  def students
+    @students.sort
+  end
+
+  def data
+    {
+      grade: @grade,
+      students: students
+    }
   end
 end
